@@ -1,0 +1,46 @@
+{
+  "inicio": {
+    "texto": "¡Hola, amante de los fierros! 🚗 Soy Leo, tu bot copiloto. Para empezar con el pie derecho, ¿cuál es el modelo de tu auto?",
+    "tipoInput": true,
+    "placeholder": "Ej: Golf GTi, Civic, Fiat 600...",
+    "validacion": "texto",
+    "guardarVariable": "modeloAuto",
+    "siguiente": "menu_principal"
+  },
+  "menu_principal": {
+    "texto": "¡Excelente nave el {modelo}! 🔥 Decime, ¿qué querés consultar hoy sobre tu coche?",
+    "opciones": [
+      { "texto": "🔧 Recomendación de Mantenimiento", "siguiente": "rec_mantenimiento" },
+      { "texto": "🚀 Tips de Potencia y Estilo", "siguiente": "rec_potencia" },
+      { "texto": "🧼 Cuidado y Estética (Detailing)", "siguiente": "rec_estetica" },
+      { "texto": "🛑 Terminar conversación", "siguiente": "fin" }
+    ]
+  },
+  "rec_mantenimiento": {
+    "texto": "Para que tu {modelo} no te deje a pie en la cita de tus sueños: Revisá el nivel de aceite cada 1.000 km y no estires los cambios de filtros. Un motor limpio es un motor feliz.",
+    "opciones": [
+      { "texto": "🔄 Volver al menú principal", "siguiente": "menu_principal" },
+      { "texto": "🛑 Terminar conversación", "siguiente": "fin" }
+    ]
+  },
+  "rec_potencia": {
+    "texto": "Si querés que tu {modelo} robe miradas: Empezá por unos buenos neumáticos de alto agarre antes de tocar el motor. Frenar bien es tan importante como ir rápido.",
+    "opciones": [
+      { "texto": "🔄 Volver al menú principal", "siguiente": "menu_principal" },
+      { "texto": "🛑 Terminar conversación", "siguiente": "fin" }
+    ]
+  },
+  "rec_estetica": {
+    "texto": "¡Tu {modelo} merece brillar! Usá siempre el método de los dos baldes para lavarlo y cera de carnauba. Nunca, pero NUNCA, uses detergente de cocina.",
+    "opciones": [
+      { "texto": "🔄 Volver al menú principal", "siguiente": "menu_principal" },
+      { "texto": "🛑 Terminar conversación", "siguiente": "fin" }
+    ]
+  },
+  "fin": {
+    "texto": "¡Fue un gusto charlar sobre el {modelo}! Guardá el auto en el garaje y nos vemos en la próxima ruta. 🏁",
+    "opciones": [
+      { "texto": "🚀 Volver a empezar", "siguiente": "reiniciar" }
+    ]
+  }
+}
